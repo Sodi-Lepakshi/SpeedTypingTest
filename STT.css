@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+body {
+    background: linear-gradient(135deg, #74ebd5, #acb6e5);
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+#speedTypingTest {
+    max-width: 900px;
+    margin: auto;
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.text-primary {
+    color: #007bff !important;
+}
+
+.card {
+    background-color: #f8f9fa;
+    border: none;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+#quoteDisplay {
+    font-size: 1.3rem;
+    color: #343a40;
+    line-height: 1.6;
+    min-height: 60px;
+    background-color: #e9ecef;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+#quoteInput {
+    resize: none;
+    border: 2px solid #ced4da;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 1.1rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+#quoteInput:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.2);
+}
+
+.btn-group .btn {
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-group .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+#result.success {
+    color: #28a745;
+    font-size: 1.2rem;
+    animation: fadeIn 0.5s ease-in;
+}
+
+#result.error {
+    color: #dc3545;
+    font-size: 1.2rem;
+    animation: fadeIn 0.5s ease-in;
+}
+
+.hidden {
+    display: none;
+}
+
+#stats {
+    background-color: #f8f9fa;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+#stats:hover {
+    transform: scale(1.02);
+}
+
+.badge {
+    font-size: 1rem;
+    padding: 5px 10px;
+}
+
+.spinner-border {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: 20px 0;
+}
+
+/* Animation for result */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #speedTypingTest {
+        padding: 20px;
+    }
+
+    .btn-group {
+        flex-direction: column;
+    }
+
+    .btn-group .btn {
+        margin: 5px 0;
+        width: 100%;
+    }
+
+    #quoteDisplay {
+        font-size: 1.1rem;
+    }
+
+    #stats .d-flex {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
